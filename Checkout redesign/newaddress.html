@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#country").focus();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3><b>Add a new address</b></h3>
+                <form>
+                    <div class="form-group">
+                        <label>Country/Region</label>
+                        <!-- <select class="selectpicker countrypicker"></select> -->
+                        <select class="form-control" id="country">
+                            <option>Australia</option>
+                            <option>India</option>
+                            <option>North America</option>
+                            <option>Canada</option>
+                            <option>Germany</option>
+                            <option>Poland</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Full name (First and Last name)</label>
+                        <input type="text" class="form-control" id="fname" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label>Street number</label>
+                        <input type="text" class="form-control" id="streetnum"
+                            placeholder="Street address, P.O.box, company name,c/o" name="streetnum"> <br>
+                        <input type="text" class="form-control" id="streetnum"
+                            placeholder="Appartment, suite, unit, building, florr, etc." name="streetnum">
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label>State / Province / Region</label>
+                        <input type="text" class="form-control" id="state" name="state">
+                    </div>
+                    <div class="form-group">
+                        <label>PIN Code</label>
+                        <input type="text" class="form-control" id="pincode" name="pincode">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone number</label>
+                        <input type="text" class="form-control" id="number" name="number">
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="default"> <b>Use as my default address.</b></label>
+                    </div>
+                </form>
+                <form id="submit" name="submit" action="payment.html" method="GET" enctype="multipart/form-data">
+                    <button type="submit" class="btn btn-warning">Use this address</button>
+                </form>
+            </div>
+
+
+
+            <div class="col-md-6">
+                <h4><b>Search for a Pickup location near you</b></h4><br>
+                <p>
+                    Amazon’s new service allows you to have your orders delivered at pickup stores located at some
+                    convenient locations in select cities. It’s simple, safe and convenient.</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <div class="radio">
+                                <label><input type="radio" name="pickup"> <b>Search by Address:</b></label> <br> <br> <br>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="pickup"> <b>Search by Pincode:</b></label> <br> <br> <br>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="pickup"> <b>Search by Landmark:</b></label> <br> <br> <br> <br>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="pickup"> <b>Search by Locker or Store Name:</b></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Search</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                            <p>(e.g. 102, M.G. Road)</p>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <p>e.g. 110049</p> <br> <br>
+                            </div>
+                            <input type="text" class="form-control">
+                            <p>e.g. AIIMS Flyover</p> <br>
+                            <input type="text" class="form-control">
+                            <p>e.g.: Juno</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
