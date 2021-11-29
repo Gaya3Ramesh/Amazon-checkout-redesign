@@ -1,0 +1,464 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script>
+            $(document).ready(function () {
+                $("#newadd").on('click', function(){
+                    $("#country").focus();
+                });
+            });
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h2>Select a delivery address</h2> <br>
+                <p>Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this
+                    address" button. Or you can <span><a id="newadd"
+                            href="E:\gayathri\FT class\newaddress.html"><u>enter a new delivery address.</u></a></span>
+                </p>
+                <p><strong>On the move? Pick up your order from our pickup store.</strong></p>
+                <p>Orders for select areas in <span><a href="E:\gayathri\FT class\newaddress.html"><u>select
+                                cities</u></a></span> can now be delivered to
+                    Amazon pickup locations. <span><a href="E:\gayathri\FT class\newaddress.html"><u>Search for
+                                a Pickup location near you</u></a></span></p>
+                <hr>
+                <h3>Most recently used</h3>
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <address>
+                            <strong>Gayathri </strong><br>
+                            No.7A , 2nd floor <br>
+                            ponnaper extention, venkatraman <br> street, lakshmipuram <br>
+                            CHENNAI, TAMIL NADU 600044 <br>
+                            India <br>
+                            <a href="#" data-toggle="modal" data-target="#instruction1"><u>Add delivery
+                                    instructions</u></a>
+                        </address>
+                        <form id="submit" name="submit" action="payment.html" method="GET"
+                            enctype="multipart/form-data">
+                            <div class="col-md-7">
+                                <button type="submit" class="btn btn-warning form-control">Deliver to this
+                                    address</button>
+                            </div>
+                        </form> <br> <br>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Edit</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <address>
+                            <strong>Abinaya </strong><br>
+                            No.7A, 2nd floor <br>
+                            Ponnaper Extension, Venkatraman <br> street, lakshmipuram <br>
+                            CHENNAI, TAMIL NADU 600044 <br>
+                            India <br>
+                            <a href="#" data-toggle="modal" data-target="#instruction2"><u>Add delivery instructions</u></a>
+                        </address>
+                        <form id="submit" name="submit" action="payment.html" method="GET"
+                            enctype="multipart/form-data">
+                            <div class="col-md-7">
+                                <button type="submit" class="btn btn-warning form-control">Deliver to this
+                                    address</button>
+                            </div>
+                        </form> <br> <br>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Edit</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Other addresses</h3>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <address>
+                            <strong>RajaRam </strong><br>
+                            No.7A , 2nd floor <br>
+                            ponnaper extention, venkatraman <br> street, lakshmipuram <br>
+                            CHENNAI, TAMIL NADU 600044 <br>
+                            India <br>
+                            <a href="#" data-toggle="modal" data-target="#instruction3"><u>Add delivery instructions</u></a>
+                        </address>
+                        <form id="submit" name="submit" action="payment.html" method="GET"
+                            enctype="multipart/form-data">
+                            <div class="col-md-7">
+                                <button type="submit" class="btn btn-warning form-control">Deliver to this
+                                    address</button>
+                            </div>
+                        </form> <br> <br>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Edit</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <address>
+                            <strong>Nivedhitha </strong><br>
+                            No.7A, 2nd floor <br>
+                            Ponnaper Extension, Venkatraman <br> street, lakshmipuram <br>
+                            CHENNAI, TAMIL NADU 600044 <br>
+                            India <br>
+                            <a href="#" data-toggle="modal" data-target="#instruction4"><u>Add delivery instructions</u></a>
+                        </address>
+                        <form id="submit" name="submit" action="payment.html" method="GET"
+                            enctype="multipart/form-data">
+                            <div class="col-md-7">
+                                <button type="submit" class="btn btn-warning form-control">Deliver to this
+                                    address</button>
+                            </div>
+                        </form> <br> <br>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Edit</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <address>
+                            <strong>GaneshRaj </strong><br>
+                            No.7A, 2nd floor <br>
+                            Ponnaper Extension, Venkatraman <br> street, lakshmipuram <br>
+                            CHENNAI, TAMIL NADU 600044 <br>
+                            India <br>
+                            <a href="#" data-toggle="modal" data-target="#instruction5"><u>Add delivery instructions</u></a>
+                        </address>
+                        <form id="submit" name="submit" action="payment.html" method="GET"
+                            enctype="multipart/form-data">
+                            <div class="col-md-7">
+                                <button type="submit" class="btn btn-warning form-control">Deliver to this
+                                    address</button>
+                            </div>
+                        </form> <br> <br>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Edit</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="form-control">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br>
+    </div>
+
+
+    <div class="container">
+        <div class="modal fade" id="instruction1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>Gayathri</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="instruction2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>Abinaya</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="instruction3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>RajaRam</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="instruction4" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>Nivedhitha</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="instruction5" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>GaneshRaj</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="instruction1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">
+                            Add delivery instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><strong>Gayathri</strong><br>No.7A , 2nd floor, ponnaper extention, venkatraman
+                                    street,
+                                    lakshmipuram, CHENNAI, TAMIL NADU, 600044, IN</p>
+                                <p></p>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Can you receive deliveriesat this address on weekends?
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        Share additional information to find this address
+                                    </p>
+                                </div>
+                                <div class="col-md-6"
+                                    style="width: 300px; height: 50px; margin-top: 20px; border-style: ridge;">
+                                    <p>
+                                        If you are not available where should we leave your package?
+                                    </p>
+                                </div>
+                            </div>
+                        </div> <br>
+                        <p>Your instructions help us to deliver your package. However, we may not be able to adhere to
+                            them in some cases.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Save instructions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
