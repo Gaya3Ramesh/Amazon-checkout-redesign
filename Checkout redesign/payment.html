@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .space_right {
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Select a payment method</h3>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <input type="radio" name="payment">
+                            <p><b>Debit/Credit/ATM Card</b></p>
+                        </div>
+                        <img src="C:\Users\user\Desktop\Amazon_cart\images\visa.png" width="45px" height="29px">
+                        <img src="C:\Users\user\Desktop\Amazon_cart\images\master.jpg" width="45px" height="29px">
+                        <img src="C:\Users\user\Desktop\Amazon_cart\images\maestro.jpg" width="45px" height="29px">
+                        <img src="C:\Users\user\Desktop\Amazon_cart\images\rupay.jpg" width="45px" height="29px">
+                        <p>We’ll save this card for your convenience. Remove it by going to Your Account section.</p>
+                        <img src="C:\Users\user\Desktop\Amazon_cart\images\card.jpg" width="45px" height="29px">
+                        <a href="#" data-toggle="modal" data-target="#add_card"><u>Add a credit or debit card</u></a>
+                    </div><br>
+                    <div class="form-group">
+                        <div class="radio">
+                            <input type="radio" name="payment">
+                            <p><b>Net Banking</b></p>
+                        </div>
+                        <select>
+                            <option disabled selected><b>Choose an option</b></option>
+                            <option>Axis bank</option>
+                            <option>HDFC bank</option>
+                            <option>ICICI bank</option>
+                            <option>Kotak bank</option>
+                            <option>State bank of India</option>
+                            <option>Andhra bank</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <input type="radio" name="payment">
+                            <p><b>Other UPI Apps</b></p>
+                        </div>
+                        <p>Please enter your UPI ID</p>
+                        <input type="text" id="upi" placeholder="Ex.mobilenumber@upi">
+                        <button type="button" class="btn btn-warning">Verify</button>
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <input type="radio" name="payment">
+                            <p><b>Pay on Delivery</b></p>
+                        </div>
+                        <p>Pay digitally with SMS Pay Link. Cash may not be accepted in COVID
+                            restricted areas</p>
+                    </div>
+                </form>
+                <form id="submit" name="submit" action="review.html" method="GET" enctype="multipart/form-data">
+                    <button type="submit" class="btn btn-warning">Continue</button>
+                </form>
+                <hr>
+            </div>
+            <div class="col-md-4">
+                <h3>More payment options</h3>
+                <hr>
+                <h4>Gift Cards, Vouchers & Promotional Codes</h4>
+                <a href="#"><u>Enter a gift card, voucher or promotional code</u></a> <br> <br> <br>
+                <input type="text" placeholder="Enter code">
+                <button type="submit" class="btn btn-warning">Apply</button>
+            </div>
+
+            <div class="modal fade" id="add_card" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Add credit or debit card</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form name="form" id="form">
+                                            <div class="form-group">
+                                                <div class="col-md-6">
+                                                    <label>Card number
+                                                        <input type="text" class="form-control">
+                                                    </label> <br>
+                                                    <label>Name on card
+                                                        <input type="text" class="form-control">
+                                                    </label> <br>
+                                                    <label>Expiry date
+                                                        <select>
+                                                            <option>01</option>
+                                                            <option>02</option>
+                                                            <option>03</option>
+                                                            <option>04</option>
+                                                            <option>05</option>
+                                                            <option>06</option>
+                                                            <option>07</option>
+                                                            <option>08</option>
+                                                            <option>09</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                        </select>
+                                                        <select>
+                                                            <option>2021</option>
+                                                            <option>2022</option>
+                                                            <option>2023</option>
+                                                            <option>2024</option>
+                                                            <option>2025</option>
+                                                            <option>2026</option>
+                                                            <option>2027</option>
+                                                            <option>2028</option>
+                                                            <option>2029</option>
+                                                            <option>2030</option>
+                                                        </select>
+                                                    </label>
+                                                    <p><input type="checkbox">Use as my default payment</p>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-6">
+                                                    <p>Accepts all major credit and debit cards:</p>
+                                                    <img src="C:\Users\LOGAN\Downloads\visa.png" width="45px"
+                                                        height="29px">
+                                                    <img src="C:\Users\LOGAN\Downloads\master.png" width="45px"
+                                                        height="29px">
+                                                    <img src="C:\Users\LOGAN\Downloads\maestro.png" width="45px"
+                                                        height="29px">
+                                                    <img src="C:\Users\LOGAN\Downloads\Rupay.jpg" width="45px"
+                                                        height="29px">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning" data-dismiss="modal">Add your
+                                card</button>
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
